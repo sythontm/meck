@@ -286,7 +286,6 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 
 @MackThon.on(events.NewMessage(outgoing=True, pattern="/up"))
 async def upstream(event):
-    event = await eor(event, "`Pulling the main repo wait a sec ....`")
     off_repo = "https://github.com/sythontm/meck"
     cmd = f"rm -rf .git"
     try:
