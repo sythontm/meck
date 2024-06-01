@@ -185,15 +185,16 @@ async def OwnerStart(event):
         ownerhson_id.remove(acc)
 
 
+import os
 
+# تعيين متغير البيئة GIT_PYTHON_REFRESH
+os.environ['GIT_PYTHON_REFRESH'] = 'quiet'
 import asyncio
 import sys
 from os import environ, execle, path, remove
 from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-export GIT_PYTHON_REFRESH=quiet
-
 HEROKU_APP_NAME = 'oklan' 
 HEROKU_API_KEY = 'HRKU-752250cc-56ff-4177-81b8-0037b09c6330'
 
