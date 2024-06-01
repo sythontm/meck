@@ -192,7 +192,7 @@ from os import environ, execle, path, remove
 from typing import Tuple
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
-GIT_PYTHON_REFRESH=quiet
+export GIT_PYTHON_REFRESH=quiet
 
 HEROKU_APP_NAME = 'oklan' 
 HEROKU_API_KEY = 'HRKU-752250cc-56ff-4177-81b8-0037b09c6330'
